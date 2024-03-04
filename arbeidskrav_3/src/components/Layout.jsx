@@ -1,6 +1,6 @@
 return (
     <div id="container">
-        <Header></Header>
-        <Nav></Nav>
+        <Nav/>
+        <Main></Main>
     </div>
 )
