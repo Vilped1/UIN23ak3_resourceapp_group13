@@ -30,7 +30,6 @@ export default function Nav() {
             {item}
           </li>
         ))}
-        ;
       </ul>
     </>
   );
