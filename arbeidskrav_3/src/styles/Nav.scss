@@ -13,9 +13,13 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.5s ease;
+    
 }
 
 .active {
     background-color: var(--white);
     color: var(--darkblue);
+    
 }
+
+
