@@ -1,6 +1,9 @@
-return (
-    <div id="container">
-        <Header></Header>
-        <Nav></Nav>
-    </div>
-)
+import Nav from "./Nav";
+
+export default function Layout() {
+  return (
+    <>
+      <Nav></Nav>;
+    </>
+  );
+}
