@@ -13,14 +13,12 @@ export default function Nav() {
 
   return (
     <>
-      <ul className="list-group">
+      <ul className="button-group">
         {/* map function som mapper ut ifra array, gir og fjerner "active" styling etter trykk (Bootstrap)*/}
         {navItems.map((item, index) => (
           <li
             className={
-              selectedIndex === index
-                ? "list-group-item active"
-                : "list-group-item"
+              selectedIndex === index ? "nav-button active" : "nav-button"
             }
             key={item}
             onClick={() => {

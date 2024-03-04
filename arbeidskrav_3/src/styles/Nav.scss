@@ -1,3 +1,16 @@
-.list-group-item {
-    
+.button-group {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+.nav-button {
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: red;
 }
