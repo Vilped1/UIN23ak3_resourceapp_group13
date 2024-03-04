@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Content from './components/Content'
 import { resources } from './resources/ressurser.js'
-
+import Layout from "./components/Layout";
 
 function App() {
 
@@ -12,10 +12,12 @@ function App() {
   const [cat, setCat] = useState("HTML")
 
   return (
-    <>
+    <>      
+    <Layout>
       <Content cat={cat} setCat={setCat} />
+    </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
