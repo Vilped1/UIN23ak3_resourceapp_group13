@@ -1,9 +1,10 @@
-import Nav from "./Nav";
+import Nav from "./Nav"
 
 export default function Layout() {
   return (
     <>
-      <Nav></Nav>;
+      <Nav></Nav>
+      <main></main>
     </>
-  );
+  )
 }
