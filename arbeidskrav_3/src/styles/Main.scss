@@ -5,3 +5,28 @@ main {
     min-height: 350px;
     font-size: 1rem;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --darkblue: #2A324B;
+    --lightblue: #58699D;
+    --grey: #E1E5EE;
+    --white: #FFFFFF;
+
+    --font: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--grey);
+    font-family: var(--font);
+    font-size: 20px;
+    /* {Gjør slik at boksen holder seg sentrert */
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+    align-items: center;
+    /* } */
+    margin: 0;
+}
+>>>>>>> Stashed changes

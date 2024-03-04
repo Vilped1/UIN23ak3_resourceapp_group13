@@ -5,12 +5,21 @@
 }
 
 .nav-button {
-    padding: 2rem;
-    background-color: black;
-    color: white;
+    background-color: var(--darkblue);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1.5rem 4.25rem;
+    border: none;
     cursor: pointer;
+    transition: background-color 0.5s ease;
 }
 
 .active {
+<<<<<<< Updated upstream
     background-color: #2A324B;
+=======
+    background-color: var(--white);
+    color: var(--darkblue);
+>>>>>>> Stashed changes
 }
