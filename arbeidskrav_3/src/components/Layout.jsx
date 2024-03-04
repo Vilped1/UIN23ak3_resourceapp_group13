@@ -1,10 +1,12 @@
 import Nav from "./Nav";
 
-export default function Layout() {
+export default function Layout({children, setCat}) {
   return (
     <>
-      <Nav></Nav>
-      <main></main>
+      <Nav setCat={setCat}></Nav>
+      <main>
+        {children}
+      </main>
     </>
   );
 }

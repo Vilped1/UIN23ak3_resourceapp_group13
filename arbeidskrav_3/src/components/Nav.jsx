@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Nav() {
+export default function Nav({cat, setCat}) { 
   let navItems = [
     "HTML",
     "CSS",
@@ -23,6 +23,7 @@ export default function Nav() {
             key={item}
             onClick={() => {
               setSelectedIndex(index);
+              setCat("React")
             }}
           >
             {item}

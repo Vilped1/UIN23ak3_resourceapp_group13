@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Content from './components/Content'
-import { resources } from './resources/ressurser.js'
-import Layout from "./components/Layout";
+import Layout from './components/Layout'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
 
@@ -12,10 +10,13 @@ function App() {
   const [cat, setCat] = useState("HTML")
 
   return (
-    <>      
-    <Layout>
-      <Content cat={cat} setCat={setCat} />
-    </Layout>
+    <>
+      <Layout setCat={setCat}>
+        {/* <Routes> */}
+          {/* <Route path=":slug" element={<Content cat={cat} />} /> */}
+        {/* </Routes> */}
+        <Content cat={cat} />
+      </Layout>
     </>
   );
 }
