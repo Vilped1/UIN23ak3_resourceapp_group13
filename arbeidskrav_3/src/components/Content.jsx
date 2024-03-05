@@ -11,7 +11,7 @@ export default function Content({ cat, setCat}) {
 
     // useEffect(() => {
     //     setCat(cat.filter(cat => cat.category === slug))
-    // })
+    // }, [])
 
     return (
         <>

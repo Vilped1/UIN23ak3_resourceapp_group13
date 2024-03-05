@@ -1,9 +1,9 @@
 import Nav from "./Nav";
 
-export default function Layout({children, setCat}) {
+export default function Layout({children, setCat, cat}) {
   return (
     <>
-      <Nav setCat={setCat}></Nav>
+      <Nav setCat={setCat} cat={cat}></Nav>
       <main>
         {children}
       </main>

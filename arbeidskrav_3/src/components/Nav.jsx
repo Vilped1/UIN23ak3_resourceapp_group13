@@ -4,12 +4,16 @@ export default function Nav({cat, setCat}) {
   let navItems = [
     "HTML",
     "CSS",
-    "Javascipt",
+    "JavaScript",
     "React",
-    "Sanity og Headless CMS",
+    "Sanity og headless CMS"
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(-1);
+
+  const handleClick = (newCat) => {
+    setCat(newCat)
+  } 
 
   return (
     <>
@@ -23,7 +27,8 @@ export default function Nav({cat, setCat}) {
             key={item}
             onClick={() => {
               setSelectedIndex(index);
-              setCat("React")
+              handleClick(item)
+              console.log(cat)
             }}
           >
             {item}

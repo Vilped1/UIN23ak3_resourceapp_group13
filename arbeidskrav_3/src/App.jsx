@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Layout setCat={setCat}>
+      <Layout setCat={setCat} cat={cat}>
         {/* <Routes> */}
           {/* <Route path=":slug" element={<Content cat={cat} />} /> */}
         {/* </Routes> */}
