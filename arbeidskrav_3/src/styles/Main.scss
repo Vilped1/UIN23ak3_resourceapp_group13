@@ -16,5 +16,18 @@ body {
     justify-content: center;
     height: 100dvh;
     align-items: center;
+    margin:0;
+
+    
+}
+
+main {
+    background-color: var(--white);
+    min-height: 350px;
+    font-size: 1rem; 
+}
+
+article {
+    padding: 5rem;
 }
 
