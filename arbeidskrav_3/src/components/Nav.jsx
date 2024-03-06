@@ -20,7 +20,7 @@ export default function Nav({ cat, setCat }) {
             key={item}
             onClick={() => {
               setSelectedIndex(index);
-              handleClick(item);
+              handleClick(item.category);
               console.log(cat);
             }}
           >
