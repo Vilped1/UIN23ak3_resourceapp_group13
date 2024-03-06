@@ -9,8 +9,10 @@ export default function Content({ cat, setCat }) {
   // ----> Ser ut som Sanity object blir filtrert ut her på et eller annet vis,
   // ----> dukker opp om man mapper direkte fra ressurser.js
   const filterCard = resources.filter((card) => card.category === cat);
-  console.log(filterCard.length);
+  console.log("Category", cat);
   console.log(filterCard);
+  console.log(filterCard.length);
+  console.log(resources);
 
   // useEffect(() => {
   //     setCat(cat.filter(cat => cat.category === slug))
@@ -20,8 +22,8 @@ export default function Content({ cat, setCat }) {
     <>
       {filterCard.map((card, index) => (
         <article id="card" key={index}>
-          <h1>{card.category}</h1>
-          <p>{card.text}</p>
+          <h1>{card?.category}</h1>
+          <p>{card?.text}</p>
           <section>
             <ul>
               {card.sources.map((link, index) => (
