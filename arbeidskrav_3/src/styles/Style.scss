@@ -51,6 +51,10 @@ p {
     color: black;
 }
 
+li::marker{
+    color: var(--darkblue);
+}
+
 #card ul li a {
     color: var(--lightblue);
     text-decoration: underline; //!!
