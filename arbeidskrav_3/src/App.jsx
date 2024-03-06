@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   // const {slug} = useParams()
-  const [cat, setCat] = useState("HTML");
+  const [cat, setCat] = useState("Sanity and Headless CMS");
 
   return (
     <>
