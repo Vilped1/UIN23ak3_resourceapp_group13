@@ -6,6 +6,7 @@
     --grey: #E1E5EE;
     --white: #FFFFFF;
     --font: "Montserrat", sans-serif;
+    
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     height: 100dvh;
     align-items: center;
     margin:0;
+    
 
     
 }
@@ -25,9 +27,13 @@ main {
     background-color: var(--white);
     min-height: 350px;
     font-size: 1rem; 
+    text-align: left;
 }
 
 article {
     padding: 5rem;
 }
 
+ul {
+    
+}
