@@ -5,6 +5,7 @@
     --lightblue: #58699D;
     --grey: #E1E5EE;
     --white: #FFFFFF;
+    --black: #000;
     --font: "Montserrat", sans-serif;
     
 }
@@ -33,6 +34,7 @@ main {
 
 article {
     padding: 5rem;
+    color: var(--black);
 }
 
 h1 {
