@@ -11,8 +11,6 @@ export default function Nav({ cat, setCat }) {
   return (
     <>
       <nav>
-        {" "}
-        {/*!!*/}
         <ul className="button-group">
           {/* map function som mapper ut ifra array, gir og fjerner "active" styling etter trykk (Bootstrap)*/}
           {resources.map((item, index) => (
@@ -31,8 +29,7 @@ export default function Nav({ cat, setCat }) {
             </li>
           ))}
         </ul>
-      </nav>{" "}
-      {/*!!*/}
+      </nav>
     </>
   );
 }
