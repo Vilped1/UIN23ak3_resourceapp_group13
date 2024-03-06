@@ -62,12 +62,12 @@ export const resources = [
         text: "React er et rammeverk bygget i JavaScript. React bruker komponenter og states for å lage en levende frontend.",
         sources: [
             {
-                title: "React documentation",
-                url: "https://reactjs.org/docs/getting-started.html"
-            },
-            {
                 title: "W3Schools",
                 url: "https://www.w3schools.com/REACT/DEFAULT.ASP"
+            },
+            {
+                title: "React documentation",
+                url: "https://reactjs.org/docs/getting-started.html"
             },
             {
                 title: "How to read JavaScript Documentation",
