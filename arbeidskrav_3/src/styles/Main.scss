@@ -18,8 +18,8 @@ body {
     justify-content: center;
     height: 100dvh;
     align-items: center;
-    margin:0;
     text-decoration: none;
+    margin:0;
 
 
 }
@@ -29,11 +29,11 @@ main {
     min-height: 350px;
     font-size: 1rem; 
     text-align: left;
-    width: 81.8rem;
 }
 
 article {
-    padding: 5rem;
+    width: 80%;
+    padding: 3rem 5rem;
     color: var(--black);
 }
 
@@ -47,5 +47,9 @@ p {
 
 ul {
     text-decoration: blue underline;
+}
+
+h1, p, ul {
+    margin-bottom: 1rem;
 }
 
