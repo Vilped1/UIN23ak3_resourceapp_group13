@@ -1,18 +1,19 @@
-import { useState } from "react";
-import { Content } from "./Content";
-import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { useState } from "react"
+import "./App.css"
+import { Routes, Route } from "react-router-dom"
 
 function App() {
-  const [category, setCategory] = useState("HTML");
+  let [category, setCategory] = useState("HTML")
+
+  console.log(category)
 
   return (
     <Layout category={category} setCategory={setCategory}>
       <Routes>
-        <Route path=":slug" element={<Content />} />
+        <Route path=":slug" />
       </Routes>
     </Layout>
-  );
+  )
 }
 
-export default App;
+export default App

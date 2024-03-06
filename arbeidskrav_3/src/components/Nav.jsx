@@ -1,11 +1,7 @@
-export default function Nav() {
-  return (
-    <ul>
-      <li className>Html</li>
-      <li>CSS</li>
-      <li>Javascript</li>
-      <li>React</li>
-      <li>Sanity og Headleass CMS</li>
-    </ul>
-  );
+export default function Nav({ category, setCategory }) {
+  const handleClick = () => {
+    setCategory("Heihei")
+    console.log(category)
+  }
+  return <h1 onClick={() => handleClick}>Hahhs</h1>
 }
