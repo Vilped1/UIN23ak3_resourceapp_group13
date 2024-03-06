@@ -5,7 +5,9 @@
     --lightblue: #58699D;
     --grey: #E1E5EE;
     --white: #FFFFFF;
+    --black: #000;
     --font: "Montserrat", sans-serif;
+    
 }
 
 body {
@@ -16,9 +18,10 @@ body {
     justify-content: center;
     height: 100dvh;
     align-items: center;
+    text-decoration: none;
     margin:0;
 
-    
+
 }
     
 
@@ -26,17 +29,29 @@ body {
 main {
     background-color: var(--white);
     min-height: 350px;
-    font-size: 1rem;
-   
-    
-}
- //
-ul {
-    padding-left: inherit;
-    margin-bottom: 0rem;
+    font-size: 1rem; 
+    text-align: left;
 }
 
 article {
-    padding: 5rem;
+    width: 80%;
+    padding: 3rem 5rem;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: large;
+}
+
+ul {
+    text-decoration: blue underline;
+}
+
+h1, p, ul {
+    margin-bottom: 1rem;
 }
 
