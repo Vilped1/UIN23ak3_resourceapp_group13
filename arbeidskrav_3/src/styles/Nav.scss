@@ -4,6 +4,9 @@
     list-style: none;
     padding: initial;
     margin: auto;
+    height: 6.5rem;
+  
+
    }
 
 .nav-button {
@@ -16,8 +19,7 @@
     cursor: pointer;
     transition: background-color 0.5s ease;
     width: 8rem;
-  
-    
+   font-size: large;
     
 }
 
@@ -26,4 +28,5 @@
     color: var(--darkblue);
    
 }
+
 
