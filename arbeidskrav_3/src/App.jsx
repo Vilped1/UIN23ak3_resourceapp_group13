@@ -8,6 +8,7 @@ function App() {
 
   // const {slug} = useParams()
   const [cat, setCat] = useState("HTML")
+  // const [nav, setNav] = useState("HTML")
 
   return (
     <>
