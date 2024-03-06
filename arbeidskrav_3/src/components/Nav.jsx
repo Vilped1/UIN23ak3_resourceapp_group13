@@ -20,7 +20,7 @@ export default function Nav({ cat, setCat }) {
                 selectedIndex === index ? "nav-button active" : "nav-button"
                 // cat === index.category ? "nav-button active" : "nav-button" Kan bruke denne
               }
-              key={item}
+              key={index}
               onClick={() => {
                 // Og ta vekk den
                 setSelectedIndex(index);
