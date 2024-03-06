@@ -1,5 +1,7 @@
+/* Importerer skrifttypen som skal bli brukt */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
+/* Lager gitte CSS-variabler som skal bli brukt senere i koden */
 :root {
     --darkblue: #2A324B;
     --lightblue: #58699D;
@@ -12,12 +14,15 @@ body {
     background-color: var(--grey);
     font-family: var(--font);
     font-size: 20px;
+    /* {Gjør slik at boksen holder seg sentrert */
     display: flex;
     justify-content: center;
     height: 100dvh;
     align-items: center;
-    margin:0;
+    /* } */
+    margin: 0;
 }
+
 
 main {
     background-color: var(--white);

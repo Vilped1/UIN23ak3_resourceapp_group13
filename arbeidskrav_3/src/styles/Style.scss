@@ -3,36 +3,12 @@
 /* Importerer skrifttypen som skal bli brukt */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
-/* Lager gitte CSS-variabler som skal bli brukt senere i koden */
-:root {
-    --darkblue: #2A324B;
-    --lightblue: #58699D;
-    --grey: #E1E5EE;
-    --white: #FFFFFF;
-
-    --font: "Montserrat", sans-serif;
-    line-height: 1.2rem; //!!
-}
-
 //!!
 #root {
     padding: 0;
+    line-height: 1.2rem;
 }
 //!!
-
-
-body {
-    background-color: var(--grey);
-    font-family: var(--font);
-    font-size: 20px;
-    /* {Gjør slik at boksen holder seg sentrert */
-    display: flex;
-    justify-content: center;
-    height: 100dvh;
-    align-items: center;
-    /* } */
-    margin: 0;
-}
 
 #cardbox {
     width: 100%;
@@ -63,21 +39,6 @@ nav ul {
     flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif; //!!
     gap: 17px; //!!
-} 
-
-.active {
-    background-color: var(--white);
-    color: var(--darkblue);
-}
-
-main {
-    background-color: var(--white);
-    min-height: 350px;
-    font-size: 1rem;
-}
-
-article {
-    padding: 5rem;
 }
 
 h1 {
