@@ -1,0 +1,68 @@
+/* Importerer skrifttypen som skal bli brukt */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Lager gitte CSS-variabler som skal bli brukt senere i koden */
+:root {
+    --darkblue: #2A324B;
+    --lightblue: #58699D;
+    --grey: #E1E5EE;
+    --white: #FFFFFF;
+    --font: "Montserrat", sans-serif;
+}
+
+#cardbox {
+    width: 100%;
+    max-width: 1200px;
+}
+
+body {
+    background-color: var(--grey);
+    font-family: var(--font);
+    font-size: 20px;
+    /* {Gjør slik at boksen holder seg sentrert */
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+    align-items: center;
+    /* } */
+    margin: 0;
+
+    main {
+        background-color: var(--white);
+        min-height: 350px;
+        font-size: 1rem; 
+        text-align: left; //!!
+    
+        #card {
+            padding: 5rem;
+            
+            h1 {
+                color: var(--darkblue);
+                margin-top: 0;
+                font-size: 1.5rem; //!!
+            }
+
+            p {
+                color: black;
+            } 
+            
+            ul li{ 
+            
+                a {
+                    color: var(--lightblue);
+                    text-decoration: underline; //!!
+                }
+                
+                ::marker{
+                    color: var(--darkblue);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
