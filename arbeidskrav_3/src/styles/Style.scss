@@ -10,10 +10,10 @@
 }
 //!!
 
-#cardbox {
-    width: 100%;
-    max-width: 1200px;
-}
+// #cardbox {
+//     width: 100%;
+//     max-width: 1200px;
+// }
 
 button {
     background-color: var(--darkblue);
@@ -41,24 +41,23 @@ nav ul {
     gap: 17px; //!!
 }
 
-h1 {
-    color: var(--darkblue);
-    margin-top: 0;
-    font-size: 1.5rem; //!!
-}
 
-p {
-    color: black;
-}
 
-li::marker{
-    color: var(--darkblue);
-}
+// p {
+//     color: black;
+// }
 
-#card ul li a {
-    color: var(--lightblue);
-    text-decoration: underline; //!!
-}
+// #card ul li{ 
+
+//     a {
+//         color: var(--lightblue);
+//         text-decoration: underline; //!!
+//     }
+    
+//     ::marker{
+//     color: var(--darkblue);
+//     }
+// }
 
 /* Gjør at nav ikk skal legge seg rart når skjermen blir mindre */
 @media only screen and (max-width: 1245px) {

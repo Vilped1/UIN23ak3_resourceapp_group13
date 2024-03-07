@@ -10,6 +10,11 @@
     --font: "Montserrat", sans-serif;
 }
 
+#cardbox {
+    width: 100%;
+    max-width: 1200px;
+}
+
 body {
     background-color: var(--grey);
     font-family: var(--font);
@@ -21,17 +26,43 @@ body {
     align-items: center;
     /* } */
     margin: 0;
+
+    main {
+        background-color: var(--white);
+        min-height: 350px;
+        font-size: 1rem; 
+        text-align: left; //!!
+    
+        #card {
+            padding: 5rem;
+            
+            h1 {
+                color: var(--darkblue);
+                margin-top: 0;
+                font-size: 1.5rem; //!!
+            }
+
+            p {
+                color: black;
+            } 
+            
+            ul li{ 
+            
+                a {
+                    color: var(--lightblue);
+                    text-decoration: underline; //!!
+                }
+                
+                ::marker{
+                    color: var(--darkblue);
+                }
+            }
+        }
+    }
 }
 
 
-main {
-    background-color: var(--white);
-    min-height: 350px;
-    font-size: 1rem; 
-    text-align: left; //!!
-}
 
-article {
-    padding: 5rem;
-}
+
+
 
