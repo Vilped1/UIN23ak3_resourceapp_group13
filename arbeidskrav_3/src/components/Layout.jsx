@@ -4,12 +4,9 @@ export default function Layout({ children, cat, setCat }) {
   return (
     <>
       <div id="cardbox">
-        {" "}
-        {/*!!*/}
-        <Nav setCat={setCat} cat={cat}></Nav>
+        <Nav setCat={setCat} cat={cat} />
         <main>{children}</main>
-      </div>{" "}
-      {/*!!*/}
+      </div>
     </>
   );
 }

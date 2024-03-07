@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { resources } from "../resources/ressurser";
 
 export default function Nav({ cat, setCat }) {
-  // Ta vekk den
-  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleClick = (newCat) => {
     setCat(newCat);
   };
+
+  // useEffect(() => {
+  //   if(selectedIndex === "HTML") {
+  //     className = "nav-button active"
+  //   }
+  // }, [cat])
 
   return (
     <>
@@ -25,7 +30,6 @@ export default function Nav({ cat, setCat }) {
                 // Og ta vekk den
                 setSelectedIndex(index);
                 handleClick(item.category);
-                console.log(cat);
               }}
             >
               {item.category}
