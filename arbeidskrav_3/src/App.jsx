@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react"
 import "./App.css"
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Navigate } from "react-router-dom"
 import Layout from "./components/Layout"
 import Nav from "./components/Nav"
 import Content from "./components/Content"
-import { Navigate } from "react-router-dom"
 
 function App() {
   const [category, setCategory] = useState("HTML")
