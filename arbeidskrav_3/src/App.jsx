@@ -6,10 +6,12 @@ import Nav from "./components/Nav"
 import Content from "./components/Content"
 
 function App() {
-  const [category, setCategory] = useState("HTML")
+  const [category, setCategory] = useState(
+    localStorage.getItem("category") || "HTML"
+  )
 
   useEffect(() => {
-    setCategory(category)
+    localStorage.setItem("category", category)
   }, [category])
 
   return (
