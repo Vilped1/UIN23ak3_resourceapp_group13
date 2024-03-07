@@ -1,16 +1,13 @@
-import { Link, useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { resources } from "../resources/resources.js"
 
 export default function Content({ category }) {
-  const { slug } = useParams()
-
   const filteredResources = resources.filter(
-    (resource) => resource.category === slug
+    (resource) => resource.category === category
   )
 
   return (
     <>
-      <Link to="/HTML">Home</Link>
       {filteredResources.map((resource, index) => (
         <div key={index}>
           <h2>{resource.category}</h2>

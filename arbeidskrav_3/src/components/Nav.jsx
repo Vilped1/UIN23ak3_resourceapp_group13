@@ -17,10 +17,9 @@ export default function Nav({ category, setCategory }) {
                 className={`menubutton ${
                   resource.category === category ? "active" : ""
                 }`}
-                to={resource.category}
+                to={resource.category.split(" ")[0].toLowerCase()}
               >
                 {resource.category}
-                {console.log(resource.category)}
               </Link>
             </li>
           ))}
