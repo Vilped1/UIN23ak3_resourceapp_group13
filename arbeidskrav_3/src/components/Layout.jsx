@@ -1,7 +1,4 @@
-import { useParams } from "react-router-dom"
-
-export default function Layout({ category, setCategory, children }) {
-  const { slug } = useParams()
+export default function Layout({ children }) {
   return (
     <>
       <div id="container">{children}</div>
