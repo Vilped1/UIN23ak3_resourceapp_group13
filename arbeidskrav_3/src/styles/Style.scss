@@ -1,0 +1,85 @@
+//!! Endret i Nav.jsx, Nav.scss, Layout.jsx, main.jsx og Main.jsx
+
+/* Importerer skrifttypen som skal bli brukt */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import '_variables.scss';
+
+//!!
+#root {
+    padding: 0;
+    line-height: 1.2rem;
+}
+//!!
+
+// #cardbox {
+//     width: 100%;
+//     max-width: 1200px;
+// }
+
+button {
+    background-color: var(--darkblue);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1.5rem 4.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+nav ul {
+    /* {Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert */
+    display: flex;
+    // justify-content: space-between;!!
+    align-items: center;
+    /* } */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* Gjør slik at det som står i vav ikke lgger seg under hverandre */
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif; //!!
+    gap: 17px; //!!
+}
+
+
+
+// p {
+//     color: black;
+// }
+
+// #card ul li{ 
+
+//     a {
+//         color: var(--lightblue);
+//         text-decoration: underline; //!!
+//     }
+    
+//     ::marker{
+//     color: var(--darkblue);
+//     }
+// }
+
+/* Gjør at nav ikk skal legge seg rart når skjermen blir mindre */
+@media only screen and (max-width: 1245px) {
+    body {
+        padding: 1rem;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        gap: 1rem
+    } 
+
+    main {
+        min-height: 400px;
+    }
+}
+
+/* Gjør at man skal kunne scrolle når skjermen blir smalere */
+@media only screen and (max-height: 550px) {
+    body {
+        height: auto;
+        padding: 1rem;
+    }
+}

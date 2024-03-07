@@ -1,0 +1,83 @@
+/* Importerer skrifttypen som skal bli brukt */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import '_variables.scss';
+
+#root {
+    padding: 0;
+    line-height: 1.2rem;
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+body {
+    background-color: $grey;
+    font-family: $font;
+    font-size: 20px;
+    /* {Gjør slik at boksen holder seg sentrert */
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+    align-items: center;
+    /* } */
+    margin: 0;
+
+    main {
+        background-color :$white;
+        min-height: 350px;
+        font-size: 1rem; 
+        text-align: left; //!!
+    
+        #card {
+            padding: 5rem;
+            
+            h1 {
+                color: $darkblue;
+                margin-top: 0;
+                font-size: 1.5rem; //!!
+            }
+
+            p {
+                color: black;
+            } 
+            
+            ul li{ 
+            
+                a {
+                    color: $lightblue;
+                    text-decoration: underline; //!!
+                }
+                
+                ::marker{
+                    color: $darkblue;
+                }
+            }
+        }
+    }
+}
+
+/* Gjør at nav ikk skal legge seg rart når skjermen blir mindre */
+@media only screen and (max-width: 1245px) {
+    body {
+        padding: 1rem;
+        
+        nav ul {
+            justify-content: flex-start;
+            gap: 1rem
+        } 
+        
+        main {
+            min-height: 400px;
+        }
+    }
+}
+
+/* Gjør at man skal kunne scrolle når skjermen blir smalere */
+@media only screen and (max-height: 550px) {
+    body {
+        height: auto;
+        padding: 1rem;
+    }
+}

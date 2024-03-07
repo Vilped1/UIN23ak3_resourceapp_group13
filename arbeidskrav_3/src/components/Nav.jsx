@@ -11,12 +11,14 @@ export default function Nav({ category, setCategory }) {
       <nav>
         <ul id="menu">
           {resources.map((resource, index) => (
-            <li key={index}>
+            <li
+              key={index}
+              className={`menubutton ${
+                resource.category === category ? "active" : ""
+              }`}
+            >
               <Link
                 onClick={() => handleClick(resource.category)}
-                className={`menubutton ${
-                  resource.category === category ? "active" : ""
-                }`}
                 to={resource.category.split(" ")[0].toLowerCase()}
               >
                 {resource.category}

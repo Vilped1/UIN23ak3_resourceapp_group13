@@ -1,0 +1,35 @@
+@import '_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+#menu {
+    /* {Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert */
+    display: flex;
+    // justify-content: space-between;!!
+    align-items: center;
+    justify-content: space-between;
+    /* } */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* Gjør slik at det som står i vav ikke lgger seg under hverandre */
+    flex-wrap: wrap;
+    font-family: $font; //!!
+    
+    gap: 17px; //!!
+}
+
+.menubutton {
+    background-color: $darkblue;
+    color: $white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.5rem 4.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.active {
+    background-color: $white;
+    color: $darkblue;
+}
