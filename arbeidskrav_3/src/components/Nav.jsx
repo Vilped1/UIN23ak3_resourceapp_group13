@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 import { resources } from "../resources/resources.js"
 
 export default function Nav({ category, setCategory }) {
-  const handleClick = (newCat) => {
-    setCategory(newCat)
+  const handleClick = (newCategory) => {
+    setCategory(newCategory)
   }
 
   return (
@@ -11,13 +11,11 @@ export default function Nav({ category, setCategory }) {
       <nav>
         <ul id="menu">
           {resources.map((resource, index) => (
-            <li
-              key={index}
-              className={`menubutton ${
-                resource.category === category ? "active" : ""
-              }`}
-            >
+            <li key={index}>
               <Link
+                className={`menubutton ${
+                  resource.category === category ? "active" : ""
+                }`}
                 onClick={() => handleClick(resource.category)}
                 to={resource.category.split(" ")[0].toLowerCase()}
               >

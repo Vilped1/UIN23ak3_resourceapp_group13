@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import "./App.css"
+// import "./App.css"
 import { Routes, Route, Navigate } from "react-router-dom"
 import Layout from "./components/Layout"
 import Nav from "./components/Nav"

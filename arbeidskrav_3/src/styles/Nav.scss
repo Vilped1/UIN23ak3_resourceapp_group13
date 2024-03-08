@@ -4,11 +4,11 @@
 #menu {
     /* {Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert */
     display: flex;
-    // justify-content: space-between;!!
+    list-style: none;
     align-items: center;
+    // justify-content: space-between;!!
     justify-content: space-between;
     /* } */
-    margin: 0;
     padding: 0;
     /* Gjør slik at det som står i vav ikke lgger seg under hverandre */
     flex-wrap: wrap;
@@ -20,24 +20,16 @@
     background-color: $darkblue;
     color: $white;
     font-size: 1rem;
+    font-weight: 700;
     padding: 1.5rem 4.25rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
 
 
-
-        a{
-            color: $white;
-            font-weight: 700;
-            transition: color .2s ease;
-        }
-
         &.active {
             background-color: $white;
-            
-            a{
-                color: $darkblue;}
-        }
+            color: $darkblue;}
+        
 }
 
 
