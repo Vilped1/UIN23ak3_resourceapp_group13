@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
-// import "./App.css"
-import { Routes, Route, Navigate } from "react-router-dom"
+import { Routes, Route, Navigate, useLocation } from "react-router-dom"
 import Layout from "./components/Layout"
 import Nav from "./components/Nav"
 import Content from "./components/Content"
@@ -10,9 +9,15 @@ function App() {
     localStorage.getItem("category") || "HTML"
   )
 
+  const location = useLocation()
+
   useEffect(() => {
+    if (location.pathname === "/") {
+      localStorage.setItem("category", "HTML")
+      setCategory("HTML")
+    }
     localStorage.setItem("category", category)
-  }, [category])
+  }, [category, location])
 
   return (
     <Layout>
