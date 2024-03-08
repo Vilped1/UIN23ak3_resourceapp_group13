@@ -1,7 +1,7 @@
 .button-group {
     /* {Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert */
     display: flex;
-    // justify-content: space-between;!!
+    justify-content: space-between;
     align-items: center;
     /* } */
     list-style-type: none;
@@ -10,7 +10,7 @@
     /* Gjør slik at det som står i vav ikke lgger seg under hverandre */
     flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif; //!!
-    gap: 17px; //!!
+    // gap: 17px; //!!
 }
 
 .nav-button {
@@ -27,5 +27,12 @@
 .active {
     background-color: var(--white);
     color: var(--darkblue);
+}
+
+@media only screen and (max-width: 1245px) {
+    .button-group {
+        justify-content: flex-start;
+        gap: 1rem
+    } 
 }
 

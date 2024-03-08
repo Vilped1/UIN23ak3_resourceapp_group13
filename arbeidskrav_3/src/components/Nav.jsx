@@ -8,12 +8,6 @@ export default function Nav({ cat, setCat }) {
     setCat(newCat);
   };
 
-  // useEffect(() => {
-  //   if(selectedIndex === "HTML") {
-  //     className = "nav-button active"
-  //   }
-  // }, [cat])
-
   return (
     <>
       <nav>

@@ -1,17 +1,8 @@
-import { useParams } from 'react-router-dom'
 import { resources } from '../resources/ressurser.js'
-import { useEffect } from 'react'
 
 export default function Content({ cat, setCat }) {
 
-    // const { slug } = useParams()
-    // console.log(slug)
-
     const filterCard = resources.filter(card => card.category === cat)
-
-    // useEffect(() => {
-    //     setCat(cat.filter(cat => cat.category === slug))
-    // }, [])
 
     return (
         <>
