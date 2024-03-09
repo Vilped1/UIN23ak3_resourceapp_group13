@@ -14,25 +14,26 @@
     flex-wrap: wrap;
 
     gap: 17px; //!!
-}
 
-.menubutton {
-    display: inline-block;
-    text-decoration: none;
-    color: $white;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif; //!!
-    font-weight: 900;
-    background-color: $darkblue;
-    padding: 1.5rem 4.25rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease; 
-
-    &.active {
-        background-color: $white;
-        color: $darkblue;
+    .menubutton {
+        display: inline-block;
+        text-decoration: none;
+        color: $white;
+        margin: 0;
+        font-weight: 700;
+        background-color: $darkblue;
+        padding: 1.5rem 4.25rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease; 
+    
+        &.active {
+            background-color: $white;
+            color: $darkblue;
+        }
     }
 }
+
+
 
 
 

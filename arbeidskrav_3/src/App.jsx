@@ -6,17 +6,17 @@ import Content from "./components/Content"
 
 function App() {
   const [category, setCategory] = useState(
-    localStorage.getItem("category") || "HTML"
+    sessionStorage.getItem("category") || "HTML"
   )
 
   const location = useLocation()
 
   useEffect(() => {
     if (location.pathname === "/") {
-      localStorage.setItem("category", "HTML")
+      sessionStorage.setItem("category", "HTML")
       setCategory("HTML")
     }
-    localStorage.setItem("category", category)
+    sessionStorage.setItem("category", category)
   }, [category, location])
 
   return (
