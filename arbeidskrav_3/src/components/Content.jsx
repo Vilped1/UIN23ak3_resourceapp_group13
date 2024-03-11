@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { resources } from "../resources/resources.js"
 
 export default function Content({ category }) {
