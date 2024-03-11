@@ -17,7 +17,7 @@ export default function Nav({ category, setCategory }) {
         <button onClick={() => toggleMenu()} className="menuToggle">
           Meny
         </button>
-        <ul className="menu hidden">
+        <ul className="menu ">
           {resources.map((resource, index) => (
             <li key={index}>
               <Link
@@ -25,7 +25,7 @@ export default function Nav({ category, setCategory }) {
                   resource.category === category ? "active" : ""
                 }`}
                 onClick={() => handleClick(resource.category)}
-                to={resource.category.split(" ")[0].toLowerCase()}
+                to={resource.category.replaceAll(" ", "-").toLowerCase()}
               >
                 {resource.category}
               </Link>

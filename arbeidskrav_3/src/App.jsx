@@ -9,6 +9,8 @@ function App() {
     sessionStorage.getItem("category") || "HTML"
   )
 
+  console.log(category.replaceAll(" ", "-").toLowerCase())
+
   const location = useLocation()
 
   useEffect(() => {
@@ -25,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate replace to="/html" />} />
         <Route
-          path={`/${category.split(" ")[0].toLowerCase()}`}
+          path={`/${category.replaceAll(" ", "-").toLowerCase()}`}
           element={<Content category={category} />}
         />
       </Routes>
