@@ -16,7 +16,7 @@ export default function Content({ category }) {
             <ul>
               {resource.sources.map((resource, index) => (
                 <li key={index}>
-                  <Link to={resource.url}>{resource.title}</Link>
+                  <a href={resource.url}>{resource.title}</a>
                 </li>
               ))}
             </ul>
