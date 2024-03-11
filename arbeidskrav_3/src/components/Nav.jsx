@@ -6,10 +6,18 @@ export default function Nav({ category, setCategory }) {
     setCategory(newCategory)
   }
 
+  const toggleMenu = () => {
+    const menu = document.querySelector(".menu")
+    menu.classList.toggle("hidden")
+  }
+
   return (
     <>
       <nav>
-        <ul id="menu">
+        <button onClick={() => toggleMenu()} className="menuToggle">
+          Meny
+        </button>
+        <ul className="menu hidden">
           {resources.map((resource, index) => (
             <li key={index}>
               <Link

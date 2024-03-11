@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import '_variables.scss';
 
-#menu {
+.menuToggle{
+    position: fixed;
+    bottom: 1rem; 
+    left: calc(50% - 2rem);
+    color: $white;
+    background-color: $darkblue;
+    height: 4rem;
+    width: 4rem;
+    border: none;
+    border-radius: 50%;
+}
+
+.menu {
     /* {Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert */
     display: flex;
     list-style: none;
     align-items: center;
-    // justify-content: space-between;
+    justify-content: space-between;
     /* } */
     padding: 0;
     margin: 0;
     /* Gjør slik at det som står i vav ikke lgger seg under hverandre */
     flex-wrap: wrap;
+    gap: 1rem; 
 
-    gap: 17px; //!!
+    &.hidden{
+        display: none;
+    }
+
 
     .menubutton {
         display: inline-block;
@@ -30,6 +46,12 @@
             background-color: $white;
             color: $darkblue;
         }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .menuToggle{
+        display: none;
     }
 }
 

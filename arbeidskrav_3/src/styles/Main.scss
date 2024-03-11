@@ -8,6 +8,7 @@
 }
 
 body {
+    position: relative;
     background-color: $grey;
     font-family: $font;
     /* {Gjør slik at boksen holder seg sentrert */
@@ -57,9 +58,6 @@ body {
     body {
         padding: 1rem;
 
-        #main{
-            padding: 1rem;
-        }
         
         nav ul {
             justify-content: flex-start;

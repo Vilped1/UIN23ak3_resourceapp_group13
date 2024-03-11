@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import '_variables.scss';
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.menuToggle{
+    align-self: flex-start;
+    font-family: 'Helvetica', sans-serif;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+}
+.menu{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    border: 2px solid $darkblue;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $font;
+    font-weight: 700;
+    list-style: none;
+    padding: 1rem;
+
+    &.hidden{
+        display: none;
+    }
+
+    .menubutton{
+        padding: 0.5rem 1rem;
+        background-color: $darkblue;
+        color: $white;
+        text-decoration: none;
+        transition: color .2 ease-in-out, background-color .2s ease-in-out;
+
+        &.active{
+            background-color: $white;
+            color: $darkblue
+        }
+    }
+}
