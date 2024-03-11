@@ -73,7 +73,7 @@ body {
 /* Gjør at man skal kunne scrolle når skjermen blir smalere */
 @media only screen and (max-height: 550px) {
     body {
-
+        height: auto;
         padding: 1rem;
     }
 }

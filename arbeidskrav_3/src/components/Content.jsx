@@ -8,11 +8,11 @@ export default function Content({ category }) {
 
   return (
     <>
-      <main>
-        {filteredResources.map((resource, index) => (
-          <div key={index} id="card">
-            <h1>{resource.category}</h1>
-            <p>{resource.text}</p>
+      {filteredResources.map((resource, index) => (
+        <article key={index} id="card">
+          <h1>{resource.category}</h1>
+          <p>{resource.text}</p>
+          <section>
             <ul>
               {resource.sources.map((resource, index) => (
                 <li key={index}>
@@ -20,9 +20,9 @@ export default function Content({ category }) {
                 </li>
               ))}
             </ul>
-          </div>
-        ))}
-      </main>
+          </section>
+        </article>
+      ))}
     </>
   )
 }
