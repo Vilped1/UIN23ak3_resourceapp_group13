@@ -30,9 +30,13 @@ body {
             p {
                 font-size: large;
             }
-            
-            ul {
-                text-decoration: blue underline;
+
+            a {
+                color: $lightblue;
+
+                &:visited {
+                    color: rgb(45, 19, 86);
+                }
             }
             
             h1, p, ul {

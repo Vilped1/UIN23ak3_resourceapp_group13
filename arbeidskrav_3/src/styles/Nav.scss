@@ -6,12 +6,11 @@
     list-style: none;
     padding: initial;
     margin: auto;
-    height: 92px;
     gap: 1rem;
     align-items: center;
-    text-decoration: none;
     
     .menubutton {
+        display: inline-block;
         background-color: $darkblue;
         color: $white;
         font-size: 1rem;
@@ -20,6 +19,7 @@
         border: none;
         cursor: pointer;
         transition: background-color 0.5s ease;
+        text-decoration: none;
 
         &.active {
             background-color: $white;
