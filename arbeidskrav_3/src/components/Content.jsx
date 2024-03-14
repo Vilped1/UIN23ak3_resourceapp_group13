@@ -7,7 +7,7 @@ export default function Content({ category }) {
     return (
         <>
             {filterCard.map((card, index) =>
-                <article id="card" key={index}>
+                <article key={index}>
                     <h1>{card.category}</h1>
                     <p>{card.text}</p>
                     <section>
