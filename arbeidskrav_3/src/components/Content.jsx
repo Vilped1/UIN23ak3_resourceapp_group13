@@ -1,8 +1,8 @@
 import { resources } from '../resources/ressurser.js'
 
-export default function Content({ cat, setCat }) {
+export default function Content({ category }) {
 
-    const filterCard = resources.filter(card => card.category === cat)
+    const filterCard = resources.filter(card => card.category === category)
 
     return (
         <>

@@ -1,10 +1,10 @@
 import Nav from "./Nav"
 
-export default function Layout({ children, cat, setCat }) {
+export default function Layout({ children, category, setCategory }) {
   return (
     <>
       <div id="cardbox">
-        <Nav setCat={setCat} cat={cat}></Nav>
+        <Nav setCategory={setCategory} category={category}></Nav>
         <main>{children}</main>
       </div>
     </>
