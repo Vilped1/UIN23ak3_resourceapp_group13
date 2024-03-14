@@ -7,7 +7,6 @@ body {
     justify-content: center;
     height: 100dvh;
     align-items: center;
-    text-decoration: none;
     margin:0;
 
     #cardbox {
@@ -17,9 +16,7 @@ body {
 
         main {
             background-color: $white;
-            min-height: 350px;
-            // font-size: 1rem; 
-            // text-align: left;
+            max-height: 350px;
             
             article {
                 padding: 5rem;
@@ -29,17 +26,17 @@ body {
                     color: $darkblue;
                 }
 
+                p {
+                    max-width: 60rem;
+                }
+
                 a {
                     color: $lightblue;
 
                     &:visited {
                         color: rgb(45, 19, 86);
                     }
-                }
-                
-                // h1, p, ul {
-                //     margin-bottom: 1rem;
-                // }
+                }   
             }
         }
     }
