@@ -13,32 +13,33 @@ body {
     #cardbox {
         width: 100%;
         max-width: 1200px;
-    }
+   
 
-    main {
-        background-color: $white;
-        min-height: 350px;
-        font-size: 1rem; 
-        text-align: left;
-        
-        article {
-            padding: 4.5rem 6rem;
+        main {
+            background-color: $white;
+            min-height: 350px;
+            font-size: 1rem; 
+            text-align: left;
             
-            h1 {
-                font-size: 2rem;
-                color: $darkblue;
-            }
-
-            a {
-                color: $lightblue;
-
-                &:visited {
-                    color: rgb(45, 19, 86);
+            article {
+                padding: 5rem;
+                
+                h1 {
+                    font-size: 2rem;
+                    color: $darkblue;
                 }
-            }
-            
-            h1, p, ul {
-                margin-bottom: 1rem;
+
+                a {
+                    color: $lightblue;
+
+                    &:visited {
+                        color: rgb(45, 19, 86);
+                    }
+                }
+                
+                h1, p, ul {
+                    margin-bottom: 1rem;
+                }
             }
         }
     }
