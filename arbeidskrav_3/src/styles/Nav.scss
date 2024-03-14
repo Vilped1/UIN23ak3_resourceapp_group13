@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 .menu {
     display: flex;
     flex-wrap: nowrap;
@@ -8,24 +10,24 @@
     gap: 1rem;
     align-items: center;
     text-decoration: none;
-   }
+    
+    .menubutton {
+        background-color: $darkblue;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 800;
+        padding: 2.1rem 4rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
 
-.menubutton {
-    background-color: var(--darkblue);
-    color: var(--white);
-    font-size: 1rem;
-    font-weight: 800;
-    padding: 2.1rem 4rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
+        &.active {
+            background-color: $white;
+            color: $darkblue;
+        }
+    }
 }
 
-.active {
-    background-color: var(--white);
-    color: var(--darkblue);
-  
-   
-}
+
 
 
