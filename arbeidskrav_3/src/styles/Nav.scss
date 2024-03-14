@@ -1,4 +1,4 @@
-.button-group {
+.menu {
     display: flex;
     flex-wrap: nowrap;
     list-style: none;
@@ -10,7 +10,7 @@
     text-decoration: none;
    }
 
-.nav-button {
+.menubutton {
     background-color: var(--darkblue);
     color: var(--white);
     font-size: 1rem;
