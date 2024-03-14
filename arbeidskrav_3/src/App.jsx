@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+// Tok vekk for å bruke egen sass
 // import './App.css'
 import Content from './components/Content'
 import Layout from './components/Layout'
