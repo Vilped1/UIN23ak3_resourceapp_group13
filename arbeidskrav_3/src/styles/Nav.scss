@@ -1,11 +1,12 @@
 @import '_variables.scss';
 
 .menu {
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: initial;
-    margin: auto;
+    margin: 0;
     gap: 1rem;
     align-items: center;
     
