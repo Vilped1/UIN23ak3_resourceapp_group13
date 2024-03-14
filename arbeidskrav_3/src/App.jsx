@@ -1,23 +1,33 @@
-import { useState } from "react";
-import "./App.css";
-import Content from "./components/Content";
-import Layout from "./components/Layout";
-import { Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react"
+import { Routes, Route, Navigate, useLocation } from "react-router-dom"
+import Layout from "./components/Layout"
+import Content from "./components/Content"
 
 function App() {
-  // const {slug} = useParams()
-  const [cat, setCat] = useState("HTML");
+  const [category, setCategory] = useState(
+    sessionStorage.getItem("category") || "HTML"
+  )
+
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setCategory("HTML")
+    }
+    sessionStorage.setItem("category", category)
+  }, [category, location])
 
   return (
-    <>
-      <Layout setCat={setCat} cat={cat}>
-        {/* <Routes> */}
-        {/* <Route path=":slug" element={<Content cat={cat} />} /> */}
-        {/* </Routes> */}
-        <Content cat={cat} />
-      </Layout>
-    </>
-  );
+    <Layout setCategory={setCategory} category={category}>
+      <Routes>
+        <Route index element={<Navigate replace to="/html" />} />
+        <Route
+          path={`/${category.split(" ")[0].toLowerCase()}`}
+          element={<Content category={category} />}
+        />
+      </Routes>
+    </Layout>
+  )
 }
 
-export default App;
+export default App

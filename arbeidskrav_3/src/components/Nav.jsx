@@ -1,36 +1,30 @@
-import { useEffect, useState } from "react";
-import { resources } from "../resources/ressurser";
+import { Link } from "react-router-dom"
+import { resources } from "../resources/resources.js"
 
-export default function Nav({ cat, setCat }) {
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const handleClick = (newCat) => {
-    setCat(newCat);
-  };
+export default function Nav({ category, setCategory }) {
+  const handleClick = (newCategory) => {
+    setCategory(newCategory)
+  }
 
   return (
     <>
       <nav>
-        <ul className="button-group">
-          {/* map function som mapper ut ifra array, gir og fjerner "active" styling etter trykk (Bootstrap)*/}
-          {resources.map((item, index) => (
-            <li
-              className={
-                selectedIndex === index ? "nav-button active" : "nav-button"
-                // cat === index.category ? "nav-button active" : "nav-button" Kan bruke denne
-              }
-              key={index}
-              onClick={() => {
-                // Og ta vekk den
-                setSelectedIndex(index);
-                handleClick(item.category);
-              }}
-            >
-              {item.category}
+        <ul className="menu ">
+          {resources.map((resource, index) => (
+            <li key={index}>
+              <Link
+                className={`menubutton ${
+                  resource.category === category ? "active" : ""
+                }`}
+                onClick={() => handleClick(resource.category)}
+                to={resource.category.split(" ")[0].toLowerCase()}
+              >
+                {resource.category}
+              </Link>
             </li>
           ))}
         </ul>
       </nav>
     </>
-  );
+  )
 }
