@@ -1,8 +1,25 @@
-// --save-dev VIKTIG å skrive ved installering av pakker!!
-import "./App.css";
+import { useState } from 'react'
+import './App.css'
+import Content from './components/Content'
+import Layout from './components/Layout'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
-  return <></>;
+
+  // const {slug} = useParams()
+  const [cat, setCat] = useState("HTML")
+  // const [nav, setNav] = useState("HTML")
+
+  return (
+    <>
+      <Layout setCat={setCat} cat={cat}>
+        {/* <Routes> */}
+          {/* <Route path=":slug" element={<Content cat={cat} />} /> */}
+        {/* </Routes> */}
+        <Content cat={cat} />
+      </Layout>
+    </>
+  );
 }
 
 export default App;
