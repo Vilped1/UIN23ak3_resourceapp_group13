@@ -20,7 +20,7 @@ function App() {
   return (
     <Layout setCategory={setCategory} category={category}>
       <Routes>
-        <Route path="/" element={<Navigate replace to="/html" />} />
+        <Route index element={<Navigate replace to="/html" />} />
         <Route
           path={`/${category.split(" ")[0].toLowerCase()}`}
           element={<Content category={category} />}
