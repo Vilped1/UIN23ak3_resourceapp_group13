@@ -45,21 +45,25 @@ body {
 /* Gjør at nav ikk skal legge seg rart når skjermen blir mindre */
 @media only screen and (max-width: 1245px) {
     body {
-        padding: 6rem;
+        padding: 7rem;
     }
 
     main {
         min-height: 400px;
+
+        
     }
     article {
         background-color: $white;
     }
+    
 }
+
 
 /* Gjør at man skal kunne scrolle når skjermen blir smalere */
 @media only screen and (max-height: 450px) {
     body {
         height: auto;
-        padding: 1rem;
+        padding: 5rem;
     }
 }
