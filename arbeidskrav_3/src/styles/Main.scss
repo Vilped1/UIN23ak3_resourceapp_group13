@@ -16,9 +16,9 @@ body {
 
         main {
             max-height: 350px;
+            background-color: $white;
 
             article {
-                background-color: $white;
                 padding: 5rem;
 
                 h1 {
@@ -50,6 +50,9 @@ body {
 
     main {
         min-height: 400px;
+    }
+    article {
+        background-color: $white;
     }
 }
 
