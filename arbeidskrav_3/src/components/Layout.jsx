@@ -1,7 +1,7 @@
-//impoterer komponenter fra nav
+// Impoterer komponenter fra nav
 import Nav from "./Nav"
 
-//Tar imot props
+// Tar imot props
 export default function Layout({ children, category, setCategory }) {
   return (
     <>

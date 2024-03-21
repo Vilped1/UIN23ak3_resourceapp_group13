@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
-//Impoterer ressursene fra resoursce.js fila
+// Impoterer ressursene fra resoursce.js fila
 import { resources } from "../resources/resources.js"
 
 export default function Nav({ category, setCategory }) {
-  //Handleclick kalles når en link klikkes på
+  // Handleclick kalles når en link klikkes på
   const handleClick = (newCategory) => {
-    //Oppdatere kategorien med ven-funksjonen
+    // Oppdatere kategorien med nav-funksjonen
     setCategory(newCategory)
   }
 
@@ -19,6 +19,7 @@ export default function Nav({ category, setCategory }) {
               <Link
                 className={`menubutton ${resource.category === category ? "active" : ""
                   }`}
+                  
                 onClick={() => handleClick(resource.category)}
                 to={resource.category.split(" ")[0].toLowerCase()}
               >
