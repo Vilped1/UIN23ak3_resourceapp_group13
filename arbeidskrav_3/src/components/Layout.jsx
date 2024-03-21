@@ -6,7 +6,8 @@ export default function Layout({ children, category, setCategory }) {
   return (
     <>
       <div id="cardbox">
-        <Nav setCategory={setCategory} category={category}></Nav>
+        {/* Sender props for å gjøre dem tilgjengelig i nav-componentet */}
+        <Nav setCategory={setCategory} category={category} />
         <main>{children}</main>
       </div>
     </>
