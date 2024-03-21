@@ -6,7 +6,7 @@ export default function Layout({ children, category, setCategory }) {
   return (
     <>
       <div id="cardbox">
-        <Nav setCategory={setCategory} category={category}></Nav>
+        <Nav setCategory={setCategory} category={category} />
         <main>{children}</main>
       </div>
     </>

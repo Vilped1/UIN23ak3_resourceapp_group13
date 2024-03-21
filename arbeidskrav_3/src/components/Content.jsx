@@ -19,7 +19,6 @@ export default function Content({ category }) {
                             {card.sources.map((link, index) =>
                                 <li key={index}><a href={link.url}>{link.title}</a></li>
                             )}
-                        {/* Sørger for at taggene er avsluttet */}
                         </ul>
                     </section>
                 </article>
