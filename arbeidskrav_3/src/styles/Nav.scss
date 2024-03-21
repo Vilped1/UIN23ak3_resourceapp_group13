@@ -1,7 +1,7 @@
-// Impoterer først variablene definert i variables.scss
+// Impoterer variablene
 @import '_variables.scss';
 
-//Bruker sass struktur for å neste elementene
+// Bruker sass struktur for å neste elementene
 .menu {
     // Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert
     justify-content: space-between;
@@ -28,7 +28,7 @@
         margin: 0;
 
 
-        // Når knappen er aktiv
+        // Endrer verdier når knappen er satt til aktiv
         &.active {
             background-color: $white;
             color: $darkblue;

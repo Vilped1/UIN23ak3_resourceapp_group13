@@ -1,7 +1,7 @@
-// ipoterer variablene
+// Importerer variablene
 @import '_variables.scss';
 
-// Oppsett av oppgave
+// Bruker sass struktur for å neste elementene
 body {
     background-color: $grey;
     font-family: $font;
@@ -17,7 +17,6 @@ body {
     #cardbox {
         width: 100%;
         max-width: 1200px;
-
 
         main {
             max-height: 350px;
