@@ -1,20 +1,17 @@
 // ipoterer variablene
 @import '_variables.scss';
 
-//oppsett av oppgave// 
+// Oppsett av oppgave
 body {
     background-color: $grey;
     font-family: $font;
-    /* {Gjør slik at boksen holder seg sentrert */
+    // Gjør slik at boksen holder seg sentrert
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
-    /* } */
-    // height: 100dvh;
-    // margin: 0;
-
     margin: 6rem 0;
+    // }
     padding: 1rem;
 
     #cardbox {
@@ -50,7 +47,7 @@ body {
     }
 }
 
-/* Gjør at nav ikk skal legge seg rart når skjermen blir mindre */
+// Gjør at nav ikk skal legge seg rart når skjermen blir mindre
 @media only screen and (max-width: 1245px) {
 
     body {

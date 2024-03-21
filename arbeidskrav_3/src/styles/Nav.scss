@@ -1,20 +1,19 @@
-//Impoterer først variablene definert i variables.scss
-
+// Impoterer først variablene definert i variables.scss
 @import '_variables.scss';
 
 //Bruker sass struktur for å neste elementene
 .menu {
-    /* {Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert */
+    // Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert
     justify-content: space-between;
     display: flex;
     align-items: center;
-    /* } */
+    // }
     list-style: none;
     padding: 0;
     margin: 0;
     gap: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    /* Gjør slik at det som står i nav legger seg under hverandre når skjermen blir mindre*/
+    // Gjør slik at det som står i nav legger seg under hverandre når skjermen blir mindre
     flex-wrap: wrap;
 
     .menubutton {
@@ -29,7 +28,7 @@
         margin: 0;
 
 
-        // når knappen er aktiv//
+        // Når knappen er aktiv
         &.active {
             background-color: $white;
             color: $darkblue;
@@ -37,7 +36,7 @@
     }
 }
 
-/* Gjør at nav ikke skal legge seg rart når skjermen blir mindre */
+// Gjør at nav ikke skal legge seg rart når skjermen blir mindre
 @media only screen and (max-width: 1245px) {
     .menu {
         justify-content: flex-start;
