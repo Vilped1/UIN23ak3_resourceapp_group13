@@ -16,17 +16,16 @@ export default function Nav({ category, setCategory }) {
           {/* Mapper gjennom ressursene og generere lenker */}
           {resources.map((resource, index) => (
             <li key={index}>
-              {
-                // Link-komponenten sender brukeren til riktig path og setter
-                //kategorien til å være lik den kategorien som er valgt. Om
-                //kategorien er lik den kategorien som er valgt, vil klassen
-                //"active" legges til.}
-              }
+              {/*Link-komponenten sender brukeren til riktig path og setter
+                kategorien til å være lik den kategorien som er valgt. Om
+                kategorien er lik den kategorien som er valgt, vil klassen
+                "active" legges til.*/}
               <Link
                 className={`menubutton ${
                   resource.category === category ? "active" : ""
                 }`}
                 onClick={() => handleClick(resource.category)}
+                /* Matcher to med Routing-path oppgitt i App.jsx */
                 to={resource.category.split(" ")[0].toLowerCase()}
               >
                 {/* Gjør at kategorinavnet vises istedenfor lenken */}
