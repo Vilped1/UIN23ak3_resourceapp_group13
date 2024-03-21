@@ -12,7 +12,7 @@ export default function Nav({ category, setCategory }) {
     <>
       <nav>
         <ul className="menu ">
-          {/* Mapper gjennom ressursene og generere lenker */}
+          {/* Mapper gjennom ressursene og genererer lenker */}
           {resources.map((resource, index) => (
             <li key={index}>
               {/* Link-komponenten sender brukeren til riktig path og setter
