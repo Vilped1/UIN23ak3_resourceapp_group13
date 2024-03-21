@@ -1,5 +1,8 @@
+//Impoterer først variablene definert i variables.scss
+
 @import '_variables.scss';
 
+//Bruker sass struktur for å neste elementene
 .menu {
     justify-content: space-between;
     display: flex;
@@ -10,7 +13,7 @@
     gap: 1rem;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    
+
     .menubutton {
         display: inline-block;
         background-color: $darkblue;
@@ -21,7 +24,7 @@
         transition: background-color 0.5s ease;
         text-decoration: none;
         margin: 0;
-        
+
 
         &.active {
             background-color: $white;
@@ -29,9 +32,9 @@
         }
     }
 }
-    
+
 @media only screen and (max-width: 1245px) {
     .menu {
         justify-content: flex-start;
-    } 
+    }
 }
