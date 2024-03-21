@@ -1,12 +1,12 @@
-//impoterer komponenter fra nav
+// Impoterer komponenter fra nav
 import Nav from "./Nav"
 
-//Tar imot props
+// Tar imot props
 export default function Layout({ children, category, setCategory }) {
   return (
     <>
       <div id="cardbox">
-        <Nav setCategory={setCategory} category={category}></Nav>
+        <Nav setCategory={setCategory} category={category} />
         <main>{children}</main>
       </div>
     </>
