@@ -1,5 +1,6 @@
 @import '_variables.scss';
 
+//meny//
 .menu {
     /* {Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert */
     justify-content: space-between;
@@ -26,6 +27,7 @@
         margin: 0;
         
 
+        // når knappen er aktiv//
         &.active {
             background-color: $white;
             color: $darkblue;

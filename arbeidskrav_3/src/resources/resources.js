@@ -1,3 +1,4 @@
+//Henter informasjon fra tidligere oppgave// 
 export const resources = [
     {
         category: "HTML",
