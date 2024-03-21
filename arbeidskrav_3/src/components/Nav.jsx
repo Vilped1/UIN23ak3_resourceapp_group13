@@ -16,6 +16,10 @@ export default function Nav({ category, setCategory }) {
           {/* Mapper gjennom ressursene og generere lenker */}
           {resources.map((resource, index) => (
             <li key={index}>
+              // Link-komponenten sender brukeren til riktig path og setter
+              kategorien til å være lik den kategorien som er valgt. Om
+              kategorien er lik den kategorien som er valgt, vil klassen
+              "active" legges til.
               <Link
                 className={`menubutton ${resource.category === category ? "active" : ""
                   }`}
