@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Routes, Route, Navigate, useLocation } from "react-router-dom"
 import Layout from "./components/Layout"
 import Content from "./components/Content"
+// Tok vekk App.css for å bruke egen sass
 
 function App() {
   const [category, setCategory] = useState(
