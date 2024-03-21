@@ -4,7 +4,7 @@ import { resources } from "../resources/resources.js"
 
 export default function Nav({ category, setCategory }) {
   const handleClick = (newCategory) => {
-    // Oppdaterer kategorien med nav-funksjonen
+    // Setter category state til å være lik knappen som er trykket på
     setCategory(newCategory)
   }
 
