@@ -5,9 +5,13 @@ body {
     font-family: $font;
     display: flex;
     justify-content: center;
-    height: 100dvh;
     align-items: center;
-    margin: 0;
+    // height: 100dvh;
+    // margin: 0;
+
+    height: auto;
+    margin: 6rem 0;
+    padding: 1rem;
 
     #cardbox {
         width: 100%;
@@ -44,27 +48,38 @@ body {
 
 /* Gjør at nav ikk skal legge seg rart når skjermen blir mindre */
 @media only screen and (max-width: 1245px) {
+    // body {
+    //     padding: 1rem;
+    // }
+
+    // main {
+    //     min-height: 400px;
+    // }
+
+    // article {
+    //     background-color: $white;
+    // }
+
+
     body {
-        padding: 1rem;
+        margin: 0;
     }
 
     main {
-        min-height: 400px;
-
-
+        max-height: 500px!important;
     }
-
     article {
+        padding: 3rem!important;
         background-color: $white;
     }
 
 }
 
 
-/* Gjør at man skal kunne scrolle når skjermen blir smalere */
-@media only screen and (max-width: 450px) {
-    body {
-        height: auto;
-        padding: 5rem;
-    }
-}
+// /* Gjør at man skal kunne scrolle når skjermen blir smalere */
+// @media only screen and (max-width: 450px) {
+//     body {
+//         height: auto;
+//         padding: 5rem;
+//     }
+// }

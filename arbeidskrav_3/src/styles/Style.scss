@@ -83,3 +83,63 @@ nav ul {
         
     }
 }
+
+// @import '_variables.scss';
+
+// body {
+//     background-color: $grey;
+//     font-family: $font;
+//     display: flex;
+//     justify-content: center;
+//     height: auto;
+//     align-items: center;
+//     margin: 6rem 0;
+//     padding: 1rem;
+
+//     #cardbox {
+//         width: 100%;
+//         max-width: 1200px;
+
+
+//         main {
+//             max-height: 350px;
+//             background-color: $white;
+
+//             article {
+//                 padding: 5rem;
+
+//                 h1 {
+//                     font-size: 2rem;
+//                     color: $darkblue;
+//                 }
+
+//                 p {
+//                     max-width: 60rem;
+//                 }
+
+//                 a {
+//                     color: $lightblue;
+
+//                     &:visited {
+//                         color: rgb(45, 19, 86);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// /* Gjør at nav ikk skal legge seg rart når skjermen blir mindre */
+// @media only screen and (max-width: 1245px) {
+//     body {
+//         margin: 0;
+//     }
+
+//     main {
+//         max-height: 500px!important;
+//     }
+//     article {
+//         padding: 3rem!important;
+//         background-color: $white;
+//     }
+// }
