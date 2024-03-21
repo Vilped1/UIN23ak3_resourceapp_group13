@@ -1,16 +1,21 @@
+// Impoterer variablene
 @import '_variables.scss';
 
+// Bruker sass struktur for å neste elementene
 .menu {
+    // Gjør at alle listeelementene ligger ved siden av hverandre istedenfor under hverandre og er sentrert
     justify-content: space-between;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    // }
     list-style: none;
     padding: 0;
     margin: 0;
     gap: 1rem;
-    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    
+    // Gjør slik at det som står i nav legger seg under hverandre når skjermen blir mindre
+    flex-wrap: wrap;
+
     .menubutton {
         display: inline-block;
         background-color: $darkblue;
@@ -21,17 +26,19 @@
         transition: background-color 0.5s ease;
         text-decoration: none;
         margin: 0;
-        
 
+
+        // Endrer verdier når knappen er satt til aktiv
         &.active {
             background-color: $white;
             color: $darkblue;
         }
     }
 }
-    
+
+// Gjør at nav ikke skal legge seg rart når skjermen blir mindre
 @media only screen and (max-width: 1245px) {
     .menu {
         justify-content: flex-start;
-    } 
+    }
 }
