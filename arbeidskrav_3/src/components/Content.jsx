@@ -1,4 +1,4 @@
-import { resources } from '../resources/ressurser.js'
+import { resources } from '../resources/resources.js'
 
 export default function Content({ category }) {
 
