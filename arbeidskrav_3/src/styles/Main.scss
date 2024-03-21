@@ -1,26 +1,28 @@
+// Importerer variablene
 @import '_variables.scss';
 
+// Bruker sass struktur for å neste elementene
 body {
     background-color: $grey;
     font-family: $font;
+    // {Gjør slik at boksen holder seg sentrert
     display: flex;
     justify-content: center;
-    height: 100dvh;
     align-items: center;
-    margin:0;
+    height: calc(100vh - 1rem);
+    // }
 
     #cardbox {
         width: 100%;
         max-width: 1200px;
-   
 
         main {
-            background-color: $white;
             max-height: 350px;
-            
+            background-color: $white;
+
             article {
                 padding: 5rem;
-                
+
                 h1 {
                     font-size: 2rem;
                     color: $darkblue;
@@ -36,26 +38,27 @@ body {
                     &:visited {
                         color: rgb(45, 19, 86);
                     }
-                }   
+                }
             }
         }
     }
 }
 
-/* Gjør at nav ikk skal legge seg rart når skjermen blir mindre */
+// Gjør at nav ikk skal legge seg rart når skjermen blir mindre
 @media only screen and (max-width: 1245px) {
-    body {
-        padding: 1rem;
-    }
-    main {
-        min-height: 400px;
-    }
-}
 
-/* Gjør at man skal kunne scrolle når skjermen blir smalere */
-@media only screen and (max-height: 450px) {
     body {
         height: auto;
         padding: 1rem;
     }
+
+    main {
+        max-height: 500px !important;
+    }
+
+    article {
+        padding: 3rem !important;
+        background-color: $white;
+    }
+
 }
