@@ -8,5 +8,5 @@ export default function Layout({ children, category, setCategory }) {
         <main>{children}</main>
       </div>
     </>
-  );
+  )
 }
