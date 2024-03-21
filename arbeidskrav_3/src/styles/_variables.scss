@@ -1,8 +1,7 @@
-//Brukte en egen scss-fil for å definere variabler som blir brukt
-
+/* Importerer skrifttypen som skal bli brukt */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
-//Ferdig satt fargekoder//
+/* Lager gitte variabler som skal bli brukt senere i koden */
 $darkblue: #2A324B;
 $lightblue: #58699D;
 $grey: #E1E5EE;
